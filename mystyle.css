@@ -1,0 +1,301 @@
+/* My Custom CSS */
+
+body {
+    background-color: white;
+    padding-top: 10px;
+    
+}
+
+h2 {
+    font-family: 'Urbanist', sans-serif;
+    justify-content: center;
+    font-size: 3em;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: animtext 4s steps(80, end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes animtext { 
+  from {
+      width: 0;
+     transition: all 2s ease-in-out;
+  } 
+
+}
+
+
+.navbar {
+    font-size: 24px;
+    padding-bottom: 25px;
+    color: black;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:green;
+        }
+}
+
+.navbar .links ul li a{
+     color: black;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:green;
+        }
+}
+
+
+.row  {
+    position: relative;
+    width: 100%;
+    min-height: 5px;
+    padding-right: 10px;
+    padding-left: 100px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.lead {
+    font-family: font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+} 
+
+
+.p-2 {
+    width: 600px;
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+}
+
+ul {
+    overflow: hidden;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 13px;
+    
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+.accordion {
+    max-width: 384px;
+    width: 100%;
+    margin: 30px auto 20px;
+    background: #efeded;
+    border-radius: 0;
+}
+
+.accordion.link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4d4d4d;
+    font-size; 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    transition: all 0.4s ease;
+    
+}
+
+.accordion li:last-chil .lin {
+    border-bottom: 0;
+    
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #aed68c;
+    transition: all 0.4 ease;
+    
+}
+
+.accordion li i.fa-chevron-down{
+    right: 12px
+    left: auto;
+    font-size: 16px;
+}
+
+accordion li.open.link {
+    color: #aa00ff;
+
+}
+
+.accordion li.open i {
+    color: #aa00ff;
+    
+}
+
+.accordion li.open i.fa-chevron-down {
+    transition: rotate (180deg);
+}
+
+.submenu {
+    display:none;
+    background: #444359;
+    font-size:14px
+}
+
+.submenu li {
+    border-bottom: 1px solid #4b4a5e;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    transition: all 0.25s ease;
+
+}
+
+.submenu a:hover {
+    background: #b63b4d;
+    color: #fff;
+}
+
+
+.clearfix::after,
+.calendar ol::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* ==============
+Calendar Styling */
+.calender {
+    border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+    .date {
+        font-size: 3.5rem;
+    }
+}
+
+.calendar ol li {
+    float: left;
+    width: 14.28571%;
+}
+
+.calendar .day-names {
+    border-bottom: 1px solid #eee;
+}
+
+.calendar .days-names li {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+    border-bottom: 1px solid #eee;
+    min-height: 13rem;
+}
+
+.calendar .days li .date {
+    margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4rem;
+    margin-bottom: 1px;
+}
+
+.calender .days li .event.span-2 {
+    width: 300%;
+}
+
+.calendar .days li .event.begin {
+    border-radius: 1rem 00 1rem;
+}
+
+.calendar .days li .event.end {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+    background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+    border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+    color: #ddd;
+}
+
+
+.date {
+    border-top: 20px solid #BEE4AB;
+    height: 70px;
+}
+
+.jumbtron {
+    background-color: #BEE4AB;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    text-align: right;
+    background-color: #f9f9f9;
+    min-width: 160px;;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.btnl {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+
+.footer{
+  background: #5FA75F;
+  color:white;
+}
+
+.footer .links ul li a{
+    
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:black;
+        }
+    }
+  }  
